@@ -1,0 +1,68 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>50 Ways to Say I Love You</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="love-container">
+
+        <header class="hero">
+            <p class="eyebrow">A little something from the heart</p>
+
+            <h1>50 Ways to Say<br>I Love You</h1>
+
+            <p class="subtitle">
+                Every number has something to say.
+            </p>
+        </header>
+
+        <section class="love-input">
+            <label for="love-number">
+                Choose a number between 1 and 50
+            </label>
+
+            <div class="input-group">
+                <input
+                    type="number"
+                    id="love-number"
+                    min="1"
+                    max="50"
+                    placeholder="1–50"
+                    autocomplete="off"
+                >
+
+                <button
+                    id="love-button"
+                    type="button"
+                    aria-label="Reveal the message"
+                >
+                    ♥
+                </button>
+            </div>
+        </section>
+
+        <section class="love-output" aria-live="polite">
+            <p id="language" class="language"></p>
+
+            <h2 id="love-message" class="love-message"></h2>
+
+            <p id="translation-note" class="translation-note"></p>
+        </section>
+
+    </main>
+
+    <div id="heart-container" aria-hidden="true"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
